@@ -8,16 +8,16 @@
     <title>Form</title>
 </head>
 <body>
-    <div class="form-container">
+    <div class="form-container" id="form">
         <h2>A simple Log in form</h2>
         <form>
             <div class="form-floating mb-4">
+                <input type="text" class="form-control" id="floatingInputName" placeholder="John Doe" required>
+                <label for="floatingInput">Full Name</label>
+              </div>
+            <div class="form-floating mb-4">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-4">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
               </div>
               <div class="form-floating mb-4">
                 <input type="number" class="form-control" id="floatingNumber" placeholder="phone-number"required>
@@ -26,11 +26,11 @@
               <div class="gender mb-4" >
                 <span>Gender</span>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male" checked>
                     <label class="form-check-label" for="inlineRadio1">Male</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="female">
                     <label class="form-check-label" for="inlineRadio2">Female</label>
                   </div>
               </div>
@@ -39,10 +39,13 @@
                 <label for="floatingPassword">Password</label>
               </div>
               <div class="button-container">
-                <button type="submit" class="button" disabled>Submit</button>
+                <button type="submit" class="button" id="submit-btn">Submit</button>
               </div>
         </form>
     </div>
-    
+    <div class="success" id="success">
+        <h2>sucess</h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
