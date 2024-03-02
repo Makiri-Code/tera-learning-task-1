@@ -60,7 +60,7 @@ body {
 }
 
 @media  screen and (max-width: 1000px) {
-    .container {
+    .form-container {
         margin: auto 10px;
     }
 }
