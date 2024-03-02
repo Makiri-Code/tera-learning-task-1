@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:wght@300&display=swap');
 
 /* Form container */
-.form-container {
+.form-container, .success{
     width: auto;
     height: auto;
-    padding: 30px 80px;
+    padding: 0px 60px;
+    margin: auto;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.65);
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -35,11 +36,16 @@
     background: rgb(255, 255, 255);
     color: rgb(82 163 80);
 }
+.success {
+    text-align: center;
+}
 h2 {
     padding: 20px 0px;
     
 }
-
+img{
+    background-color: rgba(255, 255, 255, );
+}
 body {
     margin: 0;
     color: #000;
